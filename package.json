@@ -1,0 +1,13 @@
+{
+  "name": "dw_p3-ohmyfood",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass sass/style.scss css/style.css --style compressed --no-source-map",
+    "prefix": "postcss css/style.css --use autoprefixer -d ./css/ --no-map"
+  },
+  "author": "Raphael Roy",
+  "license": "ISC",
+  "browserslist": ["defaults", "last 1 versions"]
+}
