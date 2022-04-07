@@ -1,0 +1,19 @@
+$location-background-color: #EAEAEA;
+
+#homepage__location {
+    display: flex;
+    justify-content: center;
+
+    background-color: $location-background-color;
+
+    & > p {
+        position: relative;
+        
+        // font-family: 'Roboto', sans-serif;
+
+        & > i {
+        position: absolute;
+        left: -30px;
+        }
+    }
+}

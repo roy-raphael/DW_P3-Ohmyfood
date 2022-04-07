@@ -401,4 +401,17 @@ footer {
   /* Remove hypertext decoration (<a> tag) */
   color: inherit;
   text-decoration: none;
+}
+
+#homepage__location {
+  display: flex;
+  justify-content: center;
+  background-color: #EAEAEA;
+}
+#homepage__location > p {
+  position: relative;
+}
+#homepage__location > p > i {
+  position: absolute;
+  left: -30px;
 }/*# sourceMappingURL=style.css.map */
