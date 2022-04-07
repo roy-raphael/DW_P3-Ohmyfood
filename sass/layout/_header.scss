@@ -11,7 +11,7 @@ header {
 }
 
 .header__previous-link {
-    // display: none;
+    display: none;
     position: absolute;
     left: 20px;
     height: calc(100% - $header-padding-top - $header-padding-bottom);
