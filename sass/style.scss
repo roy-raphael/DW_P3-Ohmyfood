@@ -1,6 +1,5 @@
-// Couleur Primaire : #9356DC
-// Couleur Secondaire : #FF79DA
-// Couleur Tertiaire : #99E2D0
-
-// font-family: 'Roboto', sans-serif;
-// font-family: 'Shrikhand', cursive;
+@import "utils/variables";
+@import "utils/mixins";
+@import "base/normalize";
+@import "base/typography";
+@import "layout/header";
