@@ -49,9 +49,63 @@ $presentation-background-color: #F6F6F6;
         height: 50px;
 
         color: white;
+
         border-radius: 25px;
         border-width: 0;
         background: linear-gradient($secondary, $primary);
         box-shadow: 0px 6px 10px lightgray;
+    }
+}
+
+#homepage__functioning {
+    @include homepage-padding;
+
+    & > h2 {
+        margin: 0;
+        padding: 0 0 20px 0;
+
+        font-size: 27px;
+    }
+
+    & > ol {
+        list-style: none;
+        margin: 0;
+        padding: 0 0 0 10px;
+
+        & > li {
+            position: relative;
+            margin-bottom: 40px;
+            padding-left: 30px;
+            height: 40px;
+            
+            border-radius: 10px;
+            box-shadow: 0px 6px 10px lightgray;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            & > div {
+                display: flex;
+                position: absolute;
+                left: -10px;
+                height: 25px;
+                width: 25px;
+                justify-content: center;
+                align-items: center;
+
+
+                font-weight: 700;
+                color: white;
+                
+                background-color: $primary;
+                border-radius: 50%;
+                border: 0;
+            }
+
+            & > i {
+                width: 40px;
+            }
+        }
     }
 }
