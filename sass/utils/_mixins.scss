@@ -2,3 +2,7 @@
 @mixin logo-title-font-family {
     font-family: 'Shrikhand', cursive;
 }
+
+@mixin homepage-padding {
+    padding: 40px $homepage-side-padding 60px $homepage-side-padding;
+}

@@ -405,6 +405,7 @@ footer {
 
 #homepage__location {
   display: flex;
+  padding: 0;
   justify-content: center;
   background-color: #EAEAEA;
 }
@@ -414,4 +415,33 @@ footer {
 #homepage__location > p > i {
   position: absolute;
   left: -30px;
+}
+
+#homepage__presentation {
+  display: flex;
+  padding: 40px 20px 60px 20px;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: #F6F6F6;
+}
+#homepage__presentation > h2 {
+  margin: 0;
+  padding: 0 10px 20px 10px;
+  font-size: 27px;
+}
+#homepage__presentation > p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 300;
+}
+#homepage__presentation > button {
+  margin: 30px auto 0 auto;
+  padding: 0 20px;
+  height: 50px;
+  color: white;
+  border-radius: 25px;
+  border-width: 0;
+  background: linear-gradient(#FF79DA, #9356DC);
+  box-shadow: 0px 6px 10px lightgray;
 }/*# sourceMappingURL=style.css.map */
