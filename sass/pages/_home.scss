@@ -1,12 +1,9 @@
-$location-background-color: #EAEAEA;
-$presentation-background-color: #F6F6F6;
-
 #homepage__location {
     display: flex;
     padding: 0;
     justify-content: center;
 
-    background-color: $location-background-color;
+    background-color: $homepage-location-background-color;
 
     & > p {
         position: relative;
@@ -27,7 +24,7 @@ $presentation-background-color: #F6F6F6;
     justify-content: center;
     text-align: center;
 
-    background-color: $presentation-background-color;
+    background-color: $homepage-presentation-background-color;
 
     & > h2 {
         margin: 0;
