@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -342,10 +346,6 @@ template {
   font-family: "Roboto", sans-serif;
 }
 
-* {
-  box-sizing: border-box;
-}
-
 header {
   display: flex;
   position: relative;
@@ -372,8 +372,11 @@ header {
   align-items: center;
 }
 
-.header__logo {
-  max-width: 170px;
+.header__title {
+  margin: 0;
+  font-family: "Shrikhand", cursive;
+  font-size: 32px;
+  font-weight: 500;
 }
 
 footer {
