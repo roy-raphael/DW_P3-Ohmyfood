@@ -24,7 +24,7 @@
     justify-content: center;
     text-align: center;
 
-    background-color: $homepage-presentation-background-color;
+    background-color: alternative-background-color($background-color-base);
 
     & > h2 {
         margin: 0;
@@ -40,22 +40,36 @@
         font-weight: 300;
     }
 
-    & > button {
+    & > .btn {
         margin: 30px auto 0 auto;
         padding: 0 20px;
         height: 50px;
 
         color: white;
 
+        cursor: pointer;
         border-radius: 25px;
         border-width: 0;
         background: linear-gradient($secondary, $primary);
         box-shadow: 0px 6px 10px lightgray;
+
+        &:active {
+            box-shadow: inset 0px 6px 15px lighten($color: $secondary, $amount: 3%),
+            inset 0px -6px 15px darken($color: $primary, $amount: 3%);
+            transition-duration: .3s;
+            transition-timing-function: ease;
+        }
+
+        &:focus {
+            outline: 0;
+        }
     }
 }
 
 #homepage__functioning {
     @include homepage-padding;
+    
+    background-color: $background-color-base;
 
     & > h2 {
         margin: 0;
@@ -105,4 +119,99 @@
             }
         }
     }
+}
+
+#homepage__restaurants {
+    @include homepage-padding;
+
+    background-color: alternative-background-color($background-color-base);
+
+    & #restaurants__list {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    & > h2 {
+        margin: 0;
+        padding: 0 0 20px 0;
+
+        font-size: 27px;
+    }
+
+    & .restaurant-card {
+        position: relative;
+        margin: 0;
+        gap: 0;
+        
+        overflow: hidden;
+        border-radius: 20px;
+        box-shadow: 0px 6px 10px lightgray;
+
+        & .restaurant-card__new-label {
+            position: absolute;
+            margin: 0;
+            top : 20px;
+            right: 15px;
+            height: 30px;
+            width: 80px;
+
+            color: contrast-color($tertiary);
+            font-weight: 500;
+            text-align: center;
+            line-height: 30px;
+            vertical-align: middle;
+
+            background-color: $tertiary;
+            border-radius: 5px;
+        }
+
+        & .restaurant-card__image {
+            width: 100%;
+            height: 175px;
+            object-fit: cover;
+            // Hack to remove space between the figure image and the reste of the figure
+            vertical-align: top;
+        }
+
+        & .restaurant-card__body {
+            display: flex;
+            align-items: center;
+            
+            background-color: $background-color-base;
+
+            & .restaurant-card__text {
+                flex-grow: 1;
+                padding: 10px;
+
+                /* Remove hypertext decoration (<a> tag) */
+                color: inherit; 
+                text-decoration: none;
+
+                & .restaurant-card__name {
+                    margin: 0;
+                    padding-bottom: 5px;
+                }
+
+                & .restaurant-card__location {
+                    margin: 0;
+
+                    font-weight: 300;
+                }
+            }
+
+            & .restaurant-card__like {
+                padding: 10px;
+                margin-right: 15px;
+                cursor: pointer;
+
+                & > i {
+                    height: 25px;
+                    width: 25px;
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+
 }

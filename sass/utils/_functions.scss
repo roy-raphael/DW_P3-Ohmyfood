@@ -1,0 +1,26 @@
+@function alternative-background-color($color: null) {
+    @if (lightness($color) < 50%) {
+        @return lighten($color, 3.5%);
+    } @else {
+        @return darken($color, 3.5%);
+    }
+}
+
+@function contrast-color($color: null) {
+    $contrasted-color: $color;
+
+    @if (saturation($contrasted-color) < 60%) {
+        $contrasted-color: saturate($contrasted-color, 40%);
+    }
+    @else {
+        $contrasted-color: desaturate($contrasted-color, 40%);
+    }
+
+    @if (lightness($contrasted-color) < 50%) {
+        $contrasted-color: lighten($contrasted-color, 50%);
+    } @else {
+        $contrasted-color: darken($contrasted-color, 50%);
+    }
+
+    @return $contrasted-color;
+}
