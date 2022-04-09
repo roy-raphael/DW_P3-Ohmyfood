@@ -4,9 +4,9 @@
     margin-bottom: 40px;
     height: 70px;
     
-    border-radius: 20px;
+    border-radius: 18px;
     box-shadow: 0px 6px 10px lightgray;
-
+    
     &:last-child {
         margin-bottom: 0;
     }
@@ -31,5 +31,7 @@
 
     & > i {
         width: 40px;
+
+        font-size: 18px;
     }
 }
