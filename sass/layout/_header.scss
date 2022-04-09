@@ -5,6 +5,12 @@ header {
     justify-content: center;
     padding-top: $header-padding-top;
     padding-bottom: $header-padding-bottom;
+
+    & > a {
+        /* Remove hypertext decoration (<a> tag) */
+        color: inherit; 
+        text-decoration: none;
+    }
 }
 
 .header__previous-link {

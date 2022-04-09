@@ -465,6 +465,11 @@ header {
   padding-top: 20px;
   padding-bottom: 10px;
 }
+header > a {
+  /* Remove hypertext decoration (<a> tag) */
+  color: inherit;
+  text-decoration: none;
+}
 
 .header__previous-link {
   display: none;
