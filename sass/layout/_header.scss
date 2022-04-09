@@ -13,17 +13,17 @@ header {
     left: 20px;
     height: calc(100% - $header-padding-top - $header-padding-bottom);
 
-    i {
+    > i {
         height: 100%;
 
         font-size: 20px;
         color: black;
-    }
 
-    i:before {
-        display: flex;
-        height: 100%;
-        align-items: center;
+        &:before {
+            display: flex;
+            height: 100%;
+            align-items: center;
+        }
     }
 }
 

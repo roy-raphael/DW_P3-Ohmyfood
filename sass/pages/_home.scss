@@ -1,129 +1,43 @@
+.homepage__section {
+    padding: 40px $homepage-side-padding 60px $homepage-side-padding;
+}
+
 #homepage__location {
     display: flex;
     padding: 0;
     justify-content: center;
 
     background-color: $homepage-location-background-color;
-
-    & > p {
-        position: relative;
-        
-        // font-family: 'Roboto', sans-serif;
-
-        & > i {
-        position: absolute;
-        left: -30px;
-        }
-    }
 }
 
 #homepage__presentation {
     display: flex;
-    @include homepage-padding;
     flex-direction: column;
     justify-content: center;
     text-align: center;
 
     background-color: alternative-background-color($background-color-base);
 
-    & > h2 {
-        margin: 0;
-        padding: 0 10px 20px 10px;
-
-        font-size: 27px;
-    }
-
     & > p {
         margin: 0;
 
+        color: $homepage-presentation-text-color;
         font-size: 18px;
         font-weight: 300;
-    }
-
-    & > .btn {
-        margin: 30px auto 0 auto;
-        padding: 0 20px;
-        height: 50px;
-
-        color: white;
-
-        cursor: pointer;
-        border-radius: 25px;
-        border-width: 0;
-        background: linear-gradient($secondary, $primary);
-        box-shadow: 0px 6px 10px lightgray;
-
-        &:active {
-            box-shadow: inset 0px 6px 15px lighten($color: $secondary, $amount: 3%),
-            inset 0px -6px 15px darken($color: $primary, $amount: 3%);
-            transition-duration: .3s;
-            transition-timing-function: ease;
-        }
-
-        &:focus {
-            outline: 0;
-        }
     }
 }
 
 #homepage__functioning {
-    @include homepage-padding;
-    
     background-color: $background-color-base;
-
-    & > h2 {
-        margin: 0;
-        padding: 0 0 20px 0;
-
-        font-size: 27px;
-    }
 
     & > ol {
         list-style: none;
         margin: 0;
         padding: 0 0 0 10px;
-
-        & > li {
-            display: flex;
-            align-items: center;
-            margin-bottom: 40px;
-            height: 70px;
-            
-            border-radius: 20px;
-            box-shadow: 0px 6px 10px lightgray;
-
-            &:last-child {
-                margin-bottom: 0;
-            }
-
-            & > div {
-                display: flex;
-                margin-left: -10px;
-                margin-right: 10px;
-                height: 25px;
-                width: 25px;
-                justify-content: center;
-                align-items: center;
-
-
-                font-weight: 700;
-                color: white;
-                
-                background-color: $primary;
-                border-radius: 50%;
-                border: 0;
-            }
-
-            & > i {
-                width: 40px;
-            }
-        }
     }
 }
 
 #homepage__restaurants {
-    @include homepage-padding;
-
     background-color: alternative-background-color($background-color-base);
 
     & #restaurants__list {
@@ -131,87 +45,20 @@
         flex-direction: column;
         gap: 15px;
     }
+}
 
-    & > h2 {
-        margin: 0;
-        padding: 0 0 20px 0;
+.user-location {
+    position: relative;
 
-        font-size: 27px;
+    & > i {
+    position: absolute;
+    left: -30px;
     }
+}
 
-    & .restaurant-card {
-        position: relative;
-        margin: 0;
-        gap: 0;
-        
-        overflow: hidden;
-        border-radius: 20px;
-        box-shadow: 0px 6px 10px lightgray;
+.homepage__section-title {
+    margin: 0;
+    padding: 0 10px 20px 10px;
 
-        & .restaurant-card__new-label {
-            position: absolute;
-            margin: 0;
-            top : 20px;
-            right: 15px;
-            height: 30px;
-            width: 80px;
-
-            color: contrast-color($tertiary);
-            font-weight: 500;
-            text-align: center;
-            line-height: 30px;
-            vertical-align: middle;
-
-            background-color: $tertiary;
-            border-radius: 5px;
-        }
-
-        & .restaurant-card__image {
-            width: 100%;
-            height: 175px;
-            object-fit: cover;
-            // Hack to remove space between the figure image and the reste of the figure
-            vertical-align: top;
-        }
-
-        & .restaurant-card__body {
-            display: flex;
-            align-items: center;
-            
-            background-color: $background-color-base;
-
-            & .restaurant-card__text {
-                flex-grow: 1;
-                padding: 10px;
-
-                /* Remove hypertext decoration (<a> tag) */
-                color: inherit; 
-                text-decoration: none;
-
-                & .restaurant-card__name {
-                    margin: 0;
-                    padding-bottom: 5px;
-                }
-
-                & .restaurant-card__location {
-                    margin: 0;
-
-                    font-weight: 300;
-                }
-            }
-
-            & .restaurant-card__like {
-                padding: 10px;
-                margin-right: 15px;
-                cursor: pointer;
-
-                & > i {
-                    height: 25px;
-                    width: 25px;
-                    font-size: 25px;
-                }
-            }
-        }
-    }
-
+    font-size: 27px;
 }
