@@ -10,10 +10,11 @@
     border-width: 0;
     background: linear-gradient($secondary, $primary);
     box-shadow: 0px 6px 10px $box-shadow-color;
+    transition-duration: .5s;
 
     &:active {
-        background: linear-gradient(lighten($secondary, 3%), lighten($primary, 3%));        box-shadow: 0px 9px 15px lightgray;
-        box-shadow: 0px 9px 15px darken($box-shadow-color, 10%);
+        background: linear-gradient(lighten($secondary, 3%), lighten($primary, 3%));
+        box-shadow: 0px 9px 15px darken($box-shadow-color, 15%);
         transition-duration: .1s;
         transition-timing-function: ease;
     }
