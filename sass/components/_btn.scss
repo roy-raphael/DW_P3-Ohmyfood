@@ -12,7 +12,7 @@
     box-shadow: 0px 6px 10px $box-shadow-color;
     transition-duration: .5s;
 
-    &:active {
+    &:hover {
         background: linear-gradient(lighten($secondary, 3%), lighten($primary, 3%));
         box-shadow: 0px 9px 15px darken($box-shadow-color, 15%);
         transition-duration: 0s;

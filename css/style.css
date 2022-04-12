@@ -358,7 +358,7 @@ template {
   box-shadow: 0px 6px 10px lightgrey;
   transition-duration: 0.5s;
 }
-.btn:active {
+.btn:hover {
   background: linear-gradient(#ff88de, #9b63df);
   box-shadow: 0px 9px 15px #adadad;
   transition-duration: 0s;
@@ -381,18 +381,8 @@ template {
   margin-right: 0;
 }
 .menu-category__item:hover > .menu-item__check > .menu-item-check__round {
-  -webkit-transform: translateY(-1px) rotate(360deg);
-          transform: translateY(-1px) rotate(360deg);
-  transition: -webkit-transform 0.5s 0.1s;
-  transition: transform 0.5s 0.1s;
-  transition: transform 0.5s 0.1s, -webkit-transform 0.5s 0.1s;
-}
-.menu-category__item:active > .menu-item__check {
-  margin-right: 0;
-}
-.menu-category__item:active > .menu-item__check > .menu-item-check__round {
-  -webkit-transform: translateY(-1px) rotate(360deg);
-          transform: translateY(-1px) rotate(360deg);
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
   transition: -webkit-transform 0.5s 0.1s;
   transition: transform 0.5s 0.1s;
   transition: transform 0.5s 0.1s, -webkit-transform 0.5s 0.1s;

@@ -7,27 +7,14 @@
     border-radius: 20px;
     box-shadow: 0px 6px 10px $box-shadow-color;
 
-    // @media (hover: none) {
-        &:hover > .menu-item__check {
-            margin-right: 0;
-    
-            & > .menu-item-check__round {
-                transform: translateY(-1px) rotate(360deg);
-                transition: transform .5s .1s;
-            }
-        }
-    // }
-    
-    // @media (hover: hover) {
-        &:active > .menu-item__check {
-            margin-right: 0;
+    &:hover > .menu-item__check {
+        margin-right: 0;
 
-            & > .menu-item-check__round {
-                transform: translateY(-1px) rotate(360deg);
-                transition: transform .5s .1s;
-            }
+        & > .menu-item-check__round {
+            transform: rotate(360deg);
+            transition: transform .5s .1s;
         }
-    // }
+    }
 }
 
 .menu-item__text {
