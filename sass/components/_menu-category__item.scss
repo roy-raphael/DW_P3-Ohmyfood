@@ -1,0 +1,100 @@
+.menu-category__item {
+    display: flex;
+    
+    overflow: hidden;
+    cursor: pointer;
+    background-color: $background-color-base;
+    border-radius: 20px;
+    box-shadow: 0px 6px 10px lightgray;
+
+    // @media (hover: none) {
+        &:hover > .menu-item__check {
+            margin-right: 0;
+    
+            & > .menu-item-check__round {
+                transform: translateY(-1px) rotate(360deg);
+                transition: transform .5s .1s;
+            }
+        }
+    // }
+    
+    // @media (hover: hover) {
+        &:active > .menu-item__check {
+            margin-right: 0;
+
+            & > .menu-item-check__round {
+                transform: translateY(-1px) rotate(360deg);
+                transition: transform .5s .1s;
+            }
+        }
+    // }
+}
+
+.menu-item__text {
+    padding: 10px 20px 10px 10px;
+    flex-grow: 1;
+
+    overflow: hidden;
+}
+
+.menu-item__name {
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+.menu-item__infos {
+    display: flex;
+    flex-shrink: 1;
+    justify-content: space-between;
+    
+    & > p {
+        flex-shrink: 1;
+        margin: 0;
+    }
+}
+
+.menu-item__description {
+    padding-right: 5px;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.menu-item__price {
+    font-weight: 600;
+}
+
+.menu-item__check {
+    display: flex;
+    min-width: 60px;
+    max-width: 60px;
+    margin-right: -60px;
+    justify-content: center;
+    align-items: center;
+
+    background-color: $tertiary;
+    transition: margin-right .5s;
+
+    & > .menu-item-check__round {
+        display: flex;
+        height: 25px;
+        width: 25px;
+        justify-content: center;
+        align-items: center;
+        
+        background-color: $background-color-base;
+        border-radius: 50%;
+        transition-delay: .5s;
+
+        & > .menu-item-check__icon {
+            height: 9px;
+            width: 14px;
+
+            border: solid $tertiary 3px;
+            border-top: none;
+            border-right: none;
+            transform: translateY(-1px) rotate(-45deg);
+        }
+    }
+}
