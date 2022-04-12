@@ -361,7 +361,7 @@ template {
 .btn:active {
   background: linear-gradient(#ff88de, #9b63df);
   box-shadow: 0px 9px 15px #adadad;
-  transition-duration: 0.1s;
+  transition-duration: 0s;
   transition-timing-function: ease;
 }
 .btn:focus {

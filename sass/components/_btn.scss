@@ -15,7 +15,7 @@
     &:active {
         background: linear-gradient(lighten($secondary, 3%), lighten($primary, 3%));
         box-shadow: 0px 9px 15px darken($box-shadow-color, 15%);
-        transition-duration: .1s;
+        transition-duration: 0s;
         transition-timing-function: ease;
     }
 
