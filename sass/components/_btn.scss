@@ -9,12 +9,12 @@
     border-radius: 25px;
     border-width: 0;
     background: linear-gradient($secondary, $primary);
-    box-shadow: 0px 6px 10px lightgray;
+    box-shadow: 0px 6px 10px $box-shadow-color;
 
     &:active {
-        box-shadow: inset 0px 6px 15px lighten($color: $secondary, $amount: 3%),
-        inset 0px -6px 15px darken($color: $primary, $amount: 3%);
-        transition-duration: .3s;
+        background: linear-gradient(lighten($secondary, 3%), lighten($primary, 3%));        box-shadow: 0px 9px 15px lightgray;
+        box-shadow: 0px 9px 15px darken($box-shadow-color, 10%);
+        transition-duration: .1s;
         transition-timing-function: ease;
     }
 

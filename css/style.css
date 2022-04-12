@@ -355,11 +355,13 @@ template {
   border-radius: 25px;
   border-width: 0;
   background: linear-gradient(#FF79DA, #9356DC);
-  box-shadow: 0px 6px 10px lightgray;
+  box-shadow: 0px 6px 10px lightgrey;
 }
 .btn:active {
-  box-shadow: inset 0px 6px 15px #ff88de, inset 0px -6px 15px #8b49d9;
-  transition-duration: 0.3s;
+  background: linear-gradient(#ff88de, #9b63df);
+  box-shadow: 0px 9px 15px lightgray;
+  box-shadow: 0px 9px 15px #bababa;
+  transition-duration: 0.1s;
   transition-timing-function: ease;
 }
 .btn:focus {
@@ -372,7 +374,7 @@ template {
   cursor: pointer;
   background-color: #FFFFFF;
   border-radius: 20px;
-  box-shadow: 0px 6px 10px lightgray;
+  box-shadow: 0px 6px 10px lightgrey;
 }
 .menu-category__item:hover > .menu-item__check {
   margin-right: 0;
@@ -462,7 +464,7 @@ template {
   align-items: center;
   height: 70px;
   border-radius: 18px;
-  box-shadow: 0px 6px 10px lightgray;
+  box-shadow: 0px 6px 10px lightgrey;
 }
 .ordered-list-item > div {
   display: flex;
@@ -488,7 +490,7 @@ template {
   margin: 0;
   overflow: hidden;
   border-radius: 20px;
-  box-shadow: 0px 6px 10px lightgray;
+  box-shadow: 0px 6px 10px lightgrey;
 }
 .restaurant-card .restaurant-card__new-label {
   position: absolute;
