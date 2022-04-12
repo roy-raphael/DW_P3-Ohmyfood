@@ -366,6 +366,7 @@ template {
 }
 .btn:focus {
   outline: 0;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .menu-category__item {

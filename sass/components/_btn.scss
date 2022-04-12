@@ -21,5 +21,7 @@
 
     &:focus {
         outline: 0;
+        // Disable semi-transparent blue box for mobile webkit-based browsers (Chrome, Edge, Safari)
+        -webkit-tap-highlight-color: transparent;
     }
 }
