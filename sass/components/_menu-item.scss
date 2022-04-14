@@ -1,4 +1,4 @@
-.menu-category__item {
+.menu-item {
     display: flex;
     
     overflow: hidden;
@@ -10,7 +10,7 @@
     &:hover > .menu-item__check {
         margin-right: 0;
 
-        & > .menu-item-check__round {
+        & > .menu-item__check-round {
             transform: rotate(360deg);
             transition: transform .5s .1s;
         }
@@ -63,7 +63,7 @@
     background-color: $tertiary;
     transition: margin-right .5s;
 
-    & > .menu-item-check__round {
+    & > .menu-item__check-round {
         display: flex;
         height: 25px;
         width: 25px;
@@ -74,7 +74,7 @@
         border-radius: 50%;
         transition-delay: .5s;
 
-        & > .menu-item-check__icon {
+        & > .menu-item__check-icon {
             height: 9px;
             width: 14px;
 

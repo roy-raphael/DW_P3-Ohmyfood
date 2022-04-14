@@ -1,55 +1,5 @@
-.homepage__section {
-    padding: 40px $homepage-side-padding 60px $homepage-side-padding;
-}
-
-#homepage__location {
-    display: flex;
-    padding: 0;
-    justify-content: center;
-
-    background-color: $homepage-location-background-color;
-}
-
-#homepage__presentation {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-
-    background-color: alternative-background-color($background-color-base);
-
-    & > p {
-        margin: 0;
-        padding-bottom: 30px;
-
-        color: $homepage-presentation-text-color;
-        font-size: 18px;
-        font-weight: 300;
-    }
-}
-
-#homepage__functioning {
-    background-color: $background-color-base;
-
-    & > ol {
-        list-style: none;
-        margin: 0;
-        padding: 0 0 0 10px;
-
-        display: flex;
-        flex-direction: column;
-        gap: 25px;
-    }
-}
-
-#homepage__restaurants {
-    background-color: alternative-background-color($background-color-base);
-
-    & #restaurants__list {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-    }
+.homepage-section {
+    padding: 45px $homepage-side-padding 60px $homepage-side-padding;
 }
 
 .user-location {
@@ -61,9 +11,64 @@
     }
 }
 
-.homepage__section-title {
+.homepage-section__title {
     margin: 0;
-    padding: 0 10px 20px 10px;
 
-    font-size: 27px;
+    font-size: 24px;
+}
+
+#homepage-location {
+    display: flex;
+    padding: 0;
+    justify-content: center;
+
+    background-color: $homepage-location-background-color;
+}
+
+#homepage-presentation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    background-color: alternative-background-color($background-color-base);
+
+    & > .homepage-section__title {
+        padding-inline: 25px;
+    }
+
+    & > p {
+        margin: 0;
+        padding-top: 15px;
+        padding-bottom: 30px;
+
+        color: $homepage-presentation-text-color;
+        font-size: 18px;
+        font-weight: 300;
+    }
+}
+
+#homepage-functioning {
+    background-color: $background-color-base;
+
+    & > ol {
+        list-style: none;
+        margin: 0;
+        padding: 30px 0 0 0;
+
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+}
+
+#homepage-restaurants {
+    background-color: alternative-background-color($background-color-base);
+
+    & #homepage-restaurants__list {
+        display: flex;
+        padding-top: 25px;
+        flex-direction: column;
+        gap: 15px;
+    }
 }

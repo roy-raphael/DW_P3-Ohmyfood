@@ -47,7 +47,7 @@
     width: 100%;
 }
 
-.menu-category__name {
+.menu__category-name {
     margin: 0;
     padding-bottom: 25px;
 
@@ -61,7 +61,7 @@
     }
 }
 
-.menu-category__list {
+.menu__category-list {
     display: flex;
     flex-direction: column;
     gap: 15px;
