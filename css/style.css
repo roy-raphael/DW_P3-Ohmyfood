@@ -476,6 +476,12 @@ template {
   width: 40px;
   font-size: 18px;
 }
+.ordered-list-item:hover {
+  background-color: #f1e6ff;
+}
+.ordered-list-item:hover > i {
+  color: #9356DC;
+}
 
 .restaurant-card {
   position: relative;
