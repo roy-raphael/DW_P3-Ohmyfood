@@ -15,3 +15,14 @@
 		transform: translate(-50%, -50%) rotate(1turn);
 	}
 }
+
+@keyframes fading-up {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

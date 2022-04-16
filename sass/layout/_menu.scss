@@ -45,6 +45,13 @@
 .menu__category {
     padding-bottom: 50px;
     width: 100%;
+
+    @for $i from 1 through 3 {
+        &-#{$i} {
+            animation: fading-up 0.5s ease-out calc(#{$i} * 200ms) both;
+
+        }
+    }
 }
 
 .menu__category-name {
