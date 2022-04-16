@@ -1,0 +1,17 @@
+@keyframes hide {
+	to {
+		visibility:hidden;
+	}
+}
+
+@keyframes whole-turn {
+	to {
+		transform: rotate(1turn);
+	}
+}
+
+@keyframes whole-turn--translated {
+	to {
+		transform: translate(-50%, -50%) rotate(1turn);
+	}
+}

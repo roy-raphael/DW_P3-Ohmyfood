@@ -17,6 +17,21 @@
     font-size: 24px;
 }
 
+// Full screen element
+.waiting-screen {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	
+	background-color: rgba($color: grey, $alpha: 0.5);
+	animation: hide 3s forwards;
+}
+
 #homepage-location {
     display: flex;
     padding: 0;

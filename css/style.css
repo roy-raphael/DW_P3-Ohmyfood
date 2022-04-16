@@ -1,3 +1,37 @@
+@-webkit-keyframes hide {
+  to {
+    visibility: hidden;
+  }
+}
+@keyframes hide {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes whole-turn {
+  to {
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
+  }
+}
+@keyframes whole-turn {
+  to {
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
+  }
+}
+@-webkit-keyframes whole-turn--translated {
+  to {
+    -webkit-transform: translate(-50%, -50%) rotate(1turn);
+            transform: translate(-50%, -50%) rotate(1turn);
+  }
+}
+@keyframes whole-turn--translated {
+  to {
+    -webkit-transform: translate(-50%, -50%) rotate(1turn);
+            transform: translate(-50%, -50%) rotate(1turn);
+  }
+}
 * {
   box-sizing: border-box;
 }
@@ -369,6 +403,536 @@ template {
   -webkit-tap-highlight-color: transparent;
 }
 
+.loading-spinner {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 20%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-animation: whole-turn--translated 5s linear infinite;
+          animation: whole-turn--translated 5s linear infinite;
+}
+.loading-spinner:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+  /* padding to respect the ratio of 1:1 */
+}
+.loading-spinner__svg-1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(1 * 50ms) infinite;
+          animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(1 * 50ms) infinite;
+}
+.loading-spinner__circle-1 {
+  fill: #9356DC;
+  width: 10px;
+  height: 10px;
+}
+.loading-spinner__svg-2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(2 * 50ms) infinite;
+          animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(2 * 50ms) infinite;
+}
+.loading-spinner__circle-2 {
+  fill: #9356DC;
+  width: 10px;
+  height: 10px;
+}
+.loading-spinner__svg-3 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(3 * 50ms) infinite;
+          animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(3 * 50ms) infinite;
+}
+.loading-spinner__circle-3 {
+  fill: #9356DC;
+  width: 10px;
+  height: 10px;
+}
+.loading-spinner__svg-4 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(4 * 50ms) infinite;
+          animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(4 * 50ms) infinite;
+}
+.loading-spinner__circle-4 {
+  fill: #9356DC;
+  width: 10px;
+  height: 10px;
+}
+.loading-spinner__svg-5 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(5 * 50ms) infinite;
+          animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(5 * 50ms) infinite;
+}
+.loading-spinner__circle-5 {
+  fill: #9356DC;
+  width: 10px;
+  height: 10px;
+}
+.loading-spinner__svg-6 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(6 * 50ms) infinite;
+          animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(6 * 50ms) infinite;
+}
+.loading-spinner__circle-6 {
+  fill: #9356DC;
+  width: 10px;
+  height: 10px;
+}
+.loading-spinner__svg-7 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(7 * 50ms) infinite;
+          animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(7 * 50ms) infinite;
+}
+.loading-spinner__circle-7 {
+  fill: #9356DC;
+  width: 10px;
+  height: 10px;
+}
+.loading-spinner__svg-8 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(8 * 50ms) infinite;
+          animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(8 * 50ms) infinite;
+}
+.loading-spinner__circle-8 {
+  fill: #9356DC;
+  width: 10px;
+  height: 10px;
+}
+.loading-spinner__svg-9 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(9 * 50ms) infinite;
+          animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(9 * 50ms) infinite;
+}
+.loading-spinner__circle-9 {
+  fill: #9356DC;
+  width: 10px;
+  height: 10px;
+}
+.loading-spinner__svg-10 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(10 * 50ms) infinite;
+          animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(10 * 50ms) infinite;
+}
+.loading-spinner__circle-10 {
+  fill: #9356DC;
+  width: 10px;
+  height: 10px;
+}
+.loading-spinner__svg-11 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(11 * 50ms) infinite;
+          animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(11 * 50ms) infinite;
+}
+.loading-spinner__circle-11 {
+  fill: #9356DC;
+  width: 10px;
+  height: 10px;
+}
+.loading-spinner__svg-12 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(12 * 50ms) infinite;
+          animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(12 * 50ms) infinite;
+}
+.loading-spinner__circle-12 {
+  fill: #9356DC;
+  width: 10px;
+  height: 10px;
+}
+.loading-spinner__svg-13 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(13 * 50ms) infinite;
+          animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(13 * 50ms) infinite;
+}
+.loading-spinner__circle-13 {
+  fill: #9356DC;
+  width: 10px;
+  height: 10px;
+}
+.loading-spinner__svg-14 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(14 * 50ms) infinite;
+          animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(14 * 50ms) infinite;
+}
+.loading-spinner__circle-14 {
+  fill: #9356DC;
+  width: 10px;
+  height: 10px;
+}
+.loading-spinner__svg-15 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(15 * 50ms) infinite;
+          animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(15 * 50ms) infinite;
+}
+.loading-spinner__circle-15 {
+  fill: #9356DC;
+  width: 10px;
+  height: 10px;
+}
+.loading-spinner__svg-16 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(16 * 50ms) infinite;
+          animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(16 * 50ms) infinite;
+}
+.loading-spinner__circle-16 {
+  fill: #9356DC;
+  width: 10px;
+  height: 10px;
+}
+.loading-spinner__svg-17 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(17 * 50ms) infinite;
+          animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(17 * 50ms) infinite;
+}
+.loading-spinner__circle-17 {
+  fill: #9356DC;
+  width: 10px;
+  height: 10px;
+}
+.loading-spinner__svg-18 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(18 * 50ms) infinite;
+          animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(18 * 50ms) infinite;
+}
+.loading-spinner__circle-18 {
+  fill: #9356DC;
+  width: 10px;
+  height: 10px;
+}
+
+/* ratio of 1:1*/
+.loading-spinner__circle {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-top: -100%;
+  padding-top: 100%;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  -webkit-mask-image: radial-gradient(transparent 65%, black 66%);
+          mask-image: radial-gradient(transparent 65%, black 66%);
+  -webkit-mask-image: url(/images/circle-empty.svg);
+          mask-image: url(/images/circle-empty.svg);
+  -webkit-mask-size: 170%;
+          mask-size: 170%;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+          mask-position: center;
+  -webkit-animation: whole-turn 5s linear infinite;
+          animation: whole-turn 5s linear infinite;
+}
+
+.loading-spinner__element-1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(1 * 50ms) infinite;
+          animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(1 * 50ms) infinite;
+}
+
+.loading-spinner__element-2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(2 * 50ms) infinite;
+          animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(2 * 50ms) infinite;
+}
+
+.loading-spinner__element-3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(3 * 50ms) infinite;
+          animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(3 * 50ms) infinite;
+}
+
+.loading-spinner__element-4 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(4 * 50ms) infinite;
+          animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(4 * 50ms) infinite;
+}
+
+.loading-spinner__element-5 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(5 * 50ms) infinite;
+          animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(5 * 50ms) infinite;
+}
+
+.loading-spinner__element-6 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(6 * 50ms) infinite;
+          animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(6 * 50ms) infinite;
+}
+
+.loading-spinner__element-7 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(7 * 50ms) infinite;
+          animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(7 * 50ms) infinite;
+}
+
+.loading-spinner__element-8 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(8 * 50ms) infinite;
+          animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(8 * 50ms) infinite;
+}
+
+.loading-spinner__element-9 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(9 * 50ms) infinite;
+          animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(9 * 50ms) infinite;
+}
+
+.loading-spinner__element-10 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(10 * 50ms) infinite;
+          animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(10 * 50ms) infinite;
+}
+
+.loading-spinner__element-11 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(11 * 50ms) infinite;
+          animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(11 * 50ms) infinite;
+}
+
+.loading-spinner__element-12 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(12 * 50ms) infinite;
+          animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(12 * 50ms) infinite;
+}
+
+.loading-spinner__element-13 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(13 * 50ms) infinite;
+          animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(13 * 50ms) infinite;
+}
+
+.loading-spinner__element-14 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(14 * 50ms) infinite;
+          animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(14 * 50ms) infinite;
+}
+
+.loading-spinner__element-15 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(15 * 50ms) infinite;
+          animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(15 * 50ms) infinite;
+}
+
+.loading-spinner__element-16 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(16 * 50ms) infinite;
+          animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(16 * 50ms) infinite;
+}
+
+.loading-spinner__element-17 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(17 * 50ms) infinite;
+          animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(17 * 50ms) infinite;
+}
+
+.loading-spinner__element-18 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(18 * 50ms) infinite;
+          animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(18 * 50ms) infinite;
+}
+
+.loading-spinner__circle-arc {
+  width: 100vw;
+  height: 100vw;
+  background: #9356DC;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-transform: skew(calc(90deg - calc(360deg / 18) - 1deg));
+          transform: skew(calc(90deg - calc(360deg / 18) - 1deg));
+}
+
+.loading-spinner__svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .menu-item {
   display: flex;
   overflow: hidden;
@@ -684,6 +1248,20 @@ footer {
 .homepage-section__title {
   margin: 0;
   font-size: 24px;
+}
+
+.waiting-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background-color: rgba(128, 128, 128, 0.5);
+  -webkit-animation: hide 3s forwards;
+          animation: hide 3s forwards;
 }
 
 #homepage-location {

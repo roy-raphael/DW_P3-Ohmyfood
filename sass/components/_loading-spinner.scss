@@ -1,0 +1,99 @@
+// 20% screen-width element, 1-to-1 aspect ration, centered
+.loading-spinner {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	width: 20%; // Wanted size of the loading spinner
+
+	transform: translate(-50%, -50%);
+	animation: whole-turn--translated 5s linear infinite;
+	
+	&:before {
+		content:     "";
+		display:     block;
+		padding-top: 100%; /* padding to respect the ratio of 1:1 */
+	}
+
+	@for $i from 1 through $loading-spinner__nb-elements {
+		&__svg-#{$i} {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+		
+			width: 100%;
+			height: 100%;
+			animation: whole-turn 3s cubic-bezier(.62,-0.06,.35,1.07) calc(#{$i} * 50ms) infinite;
+		}
+
+		&__circle-#{$i} {
+			fill: $primary;
+			width: 10px;
+			height: 10px;
+		}
+	}
+}
+
+// Alternate solution to do a loading spinner
+
+$loading-spinner-box-ratio: 100%; /* ratio of 1:1*/
+$radial-gradient-breakpoint: 65%;
+.loading-spinner__circle {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	margin-top: -$loading-spinner-box-ratio;
+	padding-top: $loading-spinner-box-ratio;
+	
+	overflow: hidden;
+	object-fit: cover;
+	border-radius: 50%;
+
+	// Mask option 1 : not working on webkit-based browsers
+	// mask-image: url(#loading-spinner__mask);
+
+	// Mask option 2 : gradient not very clean at the breakpoint...
+	mask-image: radial-gradient(transparent $radial-gradient-breakpoint, black calc($radial-gradient-breakpoint + 1%));
+
+	// Mask option 3 : working great, but one more file...
+	mask-image: url(/images/circle-empty.svg);
+	mask-size: 170%;
+	mask-repeat: no-repeat;
+	mask-position: center;
+
+	// Animation not fluid on Firefox
+	animation: whole-turn 5s linear infinite;
+}
+
+@for $i from 1 through $loading-spinner__nb-elements {
+    .loading-spinner__element-#{$i} {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform-origin: 0 0;
+
+        animation: whole-turn 3s cubic-bezier(.62,-0.06,.35,1.07) calc(#{$i} * 50ms) infinite;
+    }
+}
+
+$base-circle-arc-deg: 90deg;
+$circle-arc-deg: calc(360deg / #{$loading-spinner__nb-elements});
+.loading-spinner__circle-arc {
+    width: 100vw;
+    height: 100vw;
+    background: $primary;
+    transform-origin: 0 0;
+
+    transform: skew(calc(#{$base-circle-arc-deg} - #{$circle-arc-deg} - 1deg));
+}
+
+.loading-spinner__svg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+}

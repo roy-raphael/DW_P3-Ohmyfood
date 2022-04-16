@@ -1,10 +1,12 @@
 @import "utils/variables";
 @import "utils/functions";
 @import "utils/mixins";
+@import "utils/animations";
 @import "base/global";
 @import "base/normalize";
 @import "base/typography";
 @import "components/btn";
+@import "components/loading-spinner";
 @import "components/menu-item";
 @import "components/ordered-list-item";
 @import "components/restaurant-card";
