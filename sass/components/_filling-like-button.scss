@@ -1,0 +1,27 @@
+.filling-like-button {
+    cursor: pointer;
+    
+    &__heart-empty--colored, &__heart-filled--colored {
+        background: linear-gradient($secondary, $primary);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    
+        clip-path: inset(100% 0 0 0);
+        transition: clip-path 1s ease-out;
+    }
+    
+    &__heart-empty--black {
+        clip-path: inset(0 0 0 0);
+        transition: clip-path 1s ease-out;
+    }
+
+    &:hover &__heart-empty--colored, &:hover &__heart-filled--colored {
+        clip-path: inset(0 0 0 0);
+        transition: clip-path 1s ease-out;
+    }
+
+    &:hover &__heart-empty--black {
+        clip-path: inset(0 0 100% 0);
+        transition: clip-path 1s ease-out;
+    }
+}

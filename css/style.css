@@ -427,6 +427,42 @@ template {
   -webkit-tap-highlight-color: transparent;
 }
 
+.filling-like-button {
+  cursor: pointer;
+}
+.filling-like-button__heart-empty--colored, .filling-like-button__heart-filled--colored {
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-clip-path: inset(100% 0 0 0);
+          clip-path: inset(100% 0 0 0);
+  transition: -webkit-clip-path 1s ease-out;
+  transition: clip-path 1s ease-out;
+  transition: clip-path 1s ease-out, -webkit-clip-path 1s ease-out;
+}
+.filling-like-button__heart-empty--black {
+  -webkit-clip-path: inset(0 0 0 0);
+          clip-path: inset(0 0 0 0);
+  transition: -webkit-clip-path 1s ease-out;
+  transition: clip-path 1s ease-out;
+  transition: clip-path 1s ease-out, -webkit-clip-path 1s ease-out;
+}
+.filling-like-button:hover .filling-like-button__heart-empty--colored, .filling-like-button:hover .filling-like-button__heart-filled--colored {
+  -webkit-clip-path: inset(0 0 0 0);
+          clip-path: inset(0 0 0 0);
+  transition: -webkit-clip-path 1s ease-out;
+  transition: clip-path 1s ease-out;
+  transition: clip-path 1s ease-out, -webkit-clip-path 1s ease-out;
+}
+.filling-like-button:hover .filling-like-button__heart-empty--black {
+  -webkit-clip-path: inset(0 0 100% 0);
+          clip-path: inset(0 0 100% 0);
+  transition: -webkit-clip-path 1s ease-out;
+  transition: clip-path 1s ease-out;
+  transition: clip-path 1s ease-out, -webkit-clip-path 1s ease-out;
+}
+
 .loading-spinner {
   position: relative;
   top: 50%;
@@ -1078,7 +1114,8 @@ template {
   border-radius: 20px;
   box-shadow: 0px 6px 10px lightgrey;
 }
-.restaurant-card .restaurant-card__new-label {
+
+.restaurant-card__new-label {
   position: absolute;
   margin: 0;
   top: 20px;
@@ -1093,41 +1130,40 @@ template {
   background-color: #99E2D0;
   border-radius: 5px;
 }
-.restaurant-card .restaurant-card__image {
+
+.restaurant-card__image {
   width: 100%;
   height: 175px;
   -o-object-fit: cover;
      object-fit: cover;
   vertical-align: top;
 }
-.restaurant-card .restaurant-card__body {
+
+.restaurant-card__body {
   display: flex;
   align-items: center;
   background-color: #FFFFFF;
 }
-.restaurant-card .restaurant-card__body .restaurant-card__text {
+
+.restaurant-card__text {
   flex-grow: 1;
   padding: 10px;
   /* Remove hypertext decoration (<a> tag) */
   color: inherit;
   text-decoration: none;
 }
-.restaurant-card .restaurant-card__body .restaurant-card__text .restaurant-card__name {
+
+.restaurant-card__name {
   margin: 0;
   padding-bottom: 5px;
 }
-.restaurant-card .restaurant-card__body .restaurant-card__text .restaurant-card__location {
+
+.restaurant-card__location {
   margin: 0;
   font-weight: 300;
 }
-.restaurant-card .restaurant-card__body .restaurant-card__like {
-  padding: 10px;
-  margin-right: 15px;
-  cursor: pointer;
-}
-.restaurant-card .restaurant-card__body .restaurant-card__like > i {
-  height: 25px;
-  width: 25px;
+
+.filling-like-button {
   font-size: 25px;
 }
 
@@ -1221,16 +1257,17 @@ footer {
   padding: 0 15px 30px 5px;
   width: 100%;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
 }
-.menu__title > .menu__name {
+
+.menu__name {
   margin: 0;
   font-family: "Shrikhand", cursive;
   font-size: 27px;
   font-weight: 500;
 }
-.menu__title > i {
-  cursor: pointer;
+
+.filling-like-button {
   font-size: 27px;
 }
 

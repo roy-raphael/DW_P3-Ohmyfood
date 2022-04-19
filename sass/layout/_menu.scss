@@ -25,21 +25,19 @@
     padding: 0 15px 30px 5px;
     width: 100%;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
+}
 
-    & > .menu__name {
-        margin: 0;
-    
-        @include logo-title-font-family;
-        font-size: 27px;
-        font-weight: 500;
-    }
+.menu__name {
+    margin: 0;
 
-    & > i {
-        
-        cursor: pointer;
-        font-size: 27px;
-    }
+    @include logo-title-font-family;
+    font-size: 27px;
+    font-weight: 500;
+}
+
+.filling-like-button {
+    font-size: 27px;
 }
 
 .menu__category {
