@@ -4,6 +4,7 @@
 
 .user-location {
     position: relative;
+    font-size: 16px;
 
     & > i {
     position: absolute;
@@ -38,6 +39,7 @@
     justify-content: center;
 
     background-color: $homepage-location-background-color;
+    box-shadow: inset 0 10px 10px -10px rgba(0,0,0,0.4);
 }
 
 #homepage-presentation {
@@ -48,10 +50,6 @@
 
     background-color: alternative-background-color($background-color-base);
 
-    & > .homepage-section__title {
-        padding-inline: 25px;
-    }
-
     & > p {
         margin: 0;
         padding-top: 15px;
@@ -60,6 +58,14 @@
         color: $homepage-presentation-text-color;
         font-size: 18px;
         font-weight: 300;
+    }
+
+    & > .homepage-section__title {
+        padding-inline: 36px;
+    }
+
+    & > .btn {
+        margin: auto;
     }
 }
 
@@ -74,6 +80,10 @@
         display: flex;
         flex-direction: column;
         gap: 25px;
+
+        & > .ordered-list-item:not(:hover) {
+            background-color: alternative-background-color($background-color-base);
+        }
     }
 }
 
