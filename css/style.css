@@ -429,6 +429,7 @@ template {
 
 .filling-like-button {
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 .filling-like-button__heart-empty--colored, .filling-like-button__heart-filled--colored {
   background: linear-gradient(#FF79DA, #9356DC);

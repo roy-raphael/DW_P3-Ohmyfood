@@ -1,6 +1,8 @@
 .filling-like-button {
     cursor: pointer;
-    
+    // Disable semi-transparent blue box for mobile webkit-based browsers (Chrome, Edge, Safari)
+    -webkit-tap-highlight-color: transparent;
+
     &__heart-empty--colored, &__heart-filled--colored {
         background: linear-gradient($secondary, $primary);
         background-clip: text;
