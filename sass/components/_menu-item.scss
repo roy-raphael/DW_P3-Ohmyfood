@@ -4,7 +4,7 @@
     overflow: hidden;
     cursor: pointer;
     background-color: $background-color-base;
-    border-radius: 20px;
+    border-radius: 15px;
     box-shadow: 0px 6px 10px $box-shadow-color;
 
     &:hover > .menu-item__check {
@@ -26,11 +26,15 @@
 
 .menu-item__name {
     margin: 0;
-    padding-bottom: 5px;
+    padding-bottom: 7px;
+
+    font-size: 18px;
+    font-weight: 500;
 }
 
 .menu-item__infos {
     display: flex;
+    padding-bottom: 3px;
     flex-shrink: 1;
     justify-content: space-between;
     
@@ -43,12 +47,15 @@
 .menu-item__description {
     padding-right: 5px;
 
+    font-size: 15px;
+    font-weight: 300;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
 
 .menu-item__price {
+    font-size: 15px;
     font-weight: 600;
 }
 

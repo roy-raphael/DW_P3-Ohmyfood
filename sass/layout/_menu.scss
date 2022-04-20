@@ -9,20 +9,19 @@
 .menu__content {
     display: flex;
     padding: 30px $menu-side-padding 80px $menu-side-padding;
-    margin-top: -30px;
+    margin-top: -40px;
     position: relative;
     z-index: 2;
     flex-direction: column;
     align-items: center;
 
     background-color: alternative-background-color($background-color-base);
-    border-radius: 30px;
-
+    border-radius: 40px 40px 0 0;
 }
 
 .menu__title {
     display: flex;
-    padding: 0 15px 30px 5px;
+    padding: 0 5px 25px 5px;
     width: 100%;
     justify-content: space-between;
     align-items: center;
@@ -32,16 +31,17 @@
     margin: 0;
 
     @include logo-title-font-family;
-    font-size: 27px;
+    font-size: 28px;
     font-weight: 500;
 }
 
 .filling-like-button {
-    font-size: 27px;
+    font-size: 28px;
 }
 
 .menu__category {
     padding-bottom: 50px;
+    padding-bottom: 40px;
     width: 100%;
 
     @for $i from 1 through 3 {
@@ -55,9 +55,10 @@
 .menu__category-name {
     margin: 0;
     padding-bottom: 25px;
+    padding-left: 5px;
 
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 300;
 
     & > span {

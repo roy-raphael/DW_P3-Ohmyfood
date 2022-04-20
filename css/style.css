@@ -999,7 +999,7 @@ template {
   overflow: hidden;
   cursor: pointer;
   background-color: #FFFFFF;
-  border-radius: 20px;
+  border-radius: 15px;
   box-shadow: 0px 6px 10px lightgrey;
 }
 .menu-item:hover > .menu-item__check {
@@ -1021,11 +1021,14 @@ template {
 
 .menu-item__name {
   margin: 0;
-  padding-bottom: 5px;
+  padding-bottom: 7px;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .menu-item__infos {
   display: flex;
+  padding-bottom: 3px;
   flex-shrink: 1;
   justify-content: space-between;
 }
@@ -1036,12 +1039,15 @@ template {
 
 .menu-item__description {
   padding-right: 5px;
+  font-size: 15px;
+  font-weight: 300;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
 .menu-item__price {
+  font-size: 15px;
   font-weight: 600;
 }
 
@@ -1249,18 +1255,18 @@ footer {
 .menu__content {
   display: flex;
   padding: 30px 10px 80px 10px;
-  margin-top: -30px;
+  margin-top: -40px;
   position: relative;
   z-index: 2;
   flex-direction: column;
   align-items: center;
   background-color: #f6f6f6;
-  border-radius: 30px;
+  border-radius: 40px 40px 0 0;
 }
 
 .menu__title {
   display: flex;
-  padding: 0 15px 30px 5px;
+  padding: 0 5px 25px 5px;
   width: 100%;
   justify-content: space-between;
   align-items: center;
@@ -1269,16 +1275,17 @@ footer {
 .menu__name {
   margin: 0;
   font-family: "Shrikhand", cursive;
-  font-size: 27px;
+  font-size: 28px;
   font-weight: 500;
 }
 
 .filling-like-button {
-  font-size: 27px;
+  font-size: 28px;
 }
 
 .menu__category {
   padding-bottom: 50px;
+  padding-bottom: 40px;
   width: 100%;
 }
 .menu__category-1 {
@@ -1297,8 +1304,9 @@ footer {
 .menu__category-name {
   margin: 0;
   padding-bottom: 25px;
+  padding-left: 5px;
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 300;
 }
 .menu__category-name > span {
