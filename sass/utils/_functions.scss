@@ -17,9 +17,9 @@
     }
 
     @if (lightness($contrasted-color) < 50%) {
-        $contrasted-color: lighten($contrasted-color, 50%);
+        $contrasted-color: lighten($contrasted-color, 45%);
     } @else {
-        $contrasted-color: darken($contrasted-color, 50%);
+        $contrasted-color: darken($contrasted-color, 45%);
     }
 
     @return $contrasted-color;
