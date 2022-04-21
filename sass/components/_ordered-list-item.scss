@@ -1,8 +1,10 @@
 .ordered-list-item {
     display: flex;
     margin-left: 10px;
+    padding-right: 15px;
     align-items: center;
     height: 70px;
+    flex-grow: 1; // For width when displayed on one line
     
     cursor: pointer;
     // Disable semi-transparent blue box for mobile webkit-based browsers (Chrome, Edge, Safari)

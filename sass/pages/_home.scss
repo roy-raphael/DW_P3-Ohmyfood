@@ -28,10 +28,19 @@
 	width: 100%;
 	height: 100%;
 	z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 	
 	background-color: rgba($color: grey, $alpha: 0.5);
-	// animation: hide 3s forwards;
 	animation: hide $loading-spinner__hide-timeout forwards;
+}
+
+.waiting-screen__container {
+    // Wanted size of the loading spinner (adjust with sass variable)
+	width: calc($loading-spinner__screen-percentage * 100%);
+    max-width: calc($loading-spinner__screen-percentage * $page-max-width);
 }
 
 #homepage-location {
@@ -41,6 +50,10 @@
 
     background-color: $homepage-location-background-color;
     box-shadow: inset 0 10px 10px -10px rgba(0,0,0,0.4);
+
+    @media #{$big-desktop-up} {
+        border-radius: 25px 25px 0 0;
+    }
 }
 
 #homepage-presentation {
@@ -68,6 +81,10 @@
     & > .btn {
         margin: auto;
     }
+
+    @media #{$big-desktop-up} {
+        border-radius: 0 0 25px 25px;
+    }
 }
 
 #homepage-functioning {
@@ -80,7 +97,12 @@
 
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
         gap: 25px;
+
+        @media #{$desktop-up} {
+            flex-direction: row;
+        }
 
         & > .ordered-list-item:not(:hover) {
             background-color: alternative-background-color($background-color-base);
@@ -92,9 +114,15 @@
     background-color: alternative-background-color($background-color-base);
 
     & #homepage-restaurants__list {
-        display: flex;
+        display: grid;
         padding-top: 25px;
-        flex-direction: column;
         gap: 15px;
+
+        // grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    @media #{$big-desktop-up} {
+        border-radius: 25px 25px 0 0;
     }
 }

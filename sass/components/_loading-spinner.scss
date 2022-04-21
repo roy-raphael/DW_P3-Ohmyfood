@@ -1,9 +1,8 @@
-// 20% screen-width element, 1-to-1 aspect ration, centered
+// 1-to-1 aspect ratio element, centered
 .loading-spinner {
 	position: relative;
 	top: 50%;
 	left: 50%;
-	width: 20%; // Wanted size of the loading spinner
 
 	transform: translate(-50%, -50%);
 	animation: whole-turn--translated $loading-spinner__global-turn-duration linear $loading-spinner__global-turn-iterations;

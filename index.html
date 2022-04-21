@@ -64,7 +64,8 @@
             <section id="homepage-restaurants" class="homepage-section">
                 <h2 class="homepage-section__title">Restaurants</h2>
                 <div class="waiting-screen">
-                    <div class="loading-spinner">                    
+                    <div class="waiting-screen__container">  
+                        <div class="loading-spinner">                    
                         <svg class="loading-spinner__svg loading-spinner__svg-1"><circle class="loading-spinner__circle" cx="50%" cy="5%" r="5%"/></svg>
                         <svg class="loading-spinner__svg loading-spinner__svg-2"><circle class="loading-spinner__circle" cx="50%" cy="5%" r="5%"/></svg>
                         <svg class="loading-spinner__svg loading-spinner__svg-3"><circle class="loading-spinner__circle" cx="50%" cy="5%" r="5%"/></svg>
@@ -83,6 +84,7 @@
                         <svg class="loading-spinner__svg loading-spinner__svg-16"><circle class="loading-spinner__circle" cx="50%" cy="5%" r="5%"/></svg>
                         <svg class="loading-spinner__svg loading-spinner__svg-17"><circle class="loading-spinner__circle" cx="50%" cy="5%" r="5%"/></svg>
                         <svg class="loading-spinner__svg loading-spinner__svg-18"><circle class="loading-spinner__circle" cx="50%" cy="5%" r="5%"/></svg>
+                    </div>
                     </div>
                 </div>
                 <div id="homepage-restaurants__list">
@@ -157,13 +159,15 @@
         </main>
 
         <footer>
-            <p class="footer__title">ohmyfood</p>
-            <ul class="footer__list">
-                <li><i class="fas fa-utensils"></i><a href="#">Proposer un restaurant</a></li>
-                <li><i class="fas fa-hands-helping"></i><a href="#">Devenir partenaire</a></li>
-                <li><a href="#">Mentions légales</a></li>
-                <li><a href="mailto:contact@ohmyfood.fr">Contact</a></li>
-            </ul>
+            <div class="footer__content">
+                <p class="footer__title">ohmyfood</p>
+                <ul class="footer__list">
+                    <li><i class="fas fa-utensils"></i><a href="#">Proposer un restaurant</a></li>
+                    <li><i class="fas fa-hands-helping"></i><a href="#">Devenir partenaire</a></li>
+                    <li><a href="#">Mentions légales</a></li>
+                    <li><a href="mailto:contact@ohmyfood.fr">Contact</a></li>
+                </ul>
+            </div>
         </footer>
     </div>
 </body>

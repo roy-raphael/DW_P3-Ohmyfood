@@ -1,5 +1,6 @@
 .menu-item {
     display: flex;
+    // max-width: 375px; // Max width to show the text overflow
     
     overflow: hidden;
     cursor: pointer;
@@ -32,6 +33,9 @@
 
     font-size: 18px;
     font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .menu-item__infos {

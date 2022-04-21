@@ -2,6 +2,7 @@ header {
     display: flex;
     position: relative;
     width: 100%;
+    max-width: $page-max-width;
     justify-content: center;
     padding-top: $header-padding-top;
     padding-bottom: $header-padding-bottom;
