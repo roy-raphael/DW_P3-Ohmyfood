@@ -22,9 +22,37 @@ Openclassrooms project of a website for Ohmyfood imaginary company
 * images
   * logo
   * restaurants
+* menus
+  * menu-1.html
+  * menu-2.html
+  * menu-3.html
+  * menu-4.html
 * sass
-  * style.css
+  * base
+    * _global.scss
+    * _normalize.scss
+    * _typography.scss
+  * components
+    * _btn.scss
+    * _filling-like-button.scss
+    * _loading-spinner.scss
+    * _menu-item.scss
+    * _ordered-list-item.scss
+    * _restaurant-card.scss
+  * layout
+    * _footer.scss
+    * _header.scss
+    * _menu.scss
+  * pages
+    * _home.scss
+  * utils
+    * _animations.scss
+    * _functions.scss
+    * _mixins.scss
+    * _variables.scss
+  * style.scss
 * index.html
+* package.json
 ## Design Notes
 
 Mobile-first design, responsive for tablets dans desktop
