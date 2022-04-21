@@ -75,26 +75,26 @@
 
     background-color: $tertiary;
     transition: margin-right .5s;
+}
 
-    & > .menu-item__check-round {
-        display: flex;
-        height: 25px;
-        width: 25px;
-        justify-content: center;
-        align-items: center;
-        
-        background-color: $background-color-base;
-        border-radius: 50%;
-        transition-delay: .5s;
+.menu-item__check-round {
+    display: flex;
+    height: 25px;
+    width: 25px;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: $background-color-base;
+    border-radius: 50%;
+    transition-delay: .5s;
+}
 
-        & > .menu-item__check-icon {
-            height: 9px;
-            width: 14px;
+.menu-item__check-icon {
+    height: 9px;
+    width: 14px;
 
-            border: solid $tertiary 3px;
-            border-top: none;
-            border-right: none;
-            transform: translateY(-1px) rotate(-45deg);
-        }
-    }
+    border: solid $tertiary 3px;
+    border-top: none;
+    border-right: none;
+    transform: translateY(-1px) rotate(-45deg);
 }

@@ -44,7 +44,7 @@
 
     @media #{$desktop-up} {
         // grid-template-columns: repeat(3, minmax(0, 1fr));
-        // Do this instead, to be adaptative if the number of columns is not 3
+        // Do this instead, to be adaptative if the number of columns is not 3 :
         grid-auto-flow: column;
     }
 }
