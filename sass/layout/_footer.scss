@@ -35,6 +35,8 @@ footer {
             // Remove hypertext decoration (<a> tag)
             color: inherit; 
             text-decoration: none;
+            // Disable semi-transparent blue box for mobile webkit-based browsers (Chrome, Edge, Safari)
+            -webkit-tap-highlight-color: transparent;
         }
     }
 }

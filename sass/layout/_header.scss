@@ -10,6 +10,9 @@ header {
         // Remove hypertext decoration (<a> tag)
         color: inherit; 
         text-decoration: none;
+        
+        // Disable semi-transparent blue box for mobile webkit-based browsers (Chrome, Edge, Safari)
+        -webkit-tap-highlight-color: transparent;
     }
 }
 
@@ -17,6 +20,9 @@ header {
     position: absolute;
     left: 20px;
     height: calc(100% - $header-padding-top - $header-padding-bottom);
+    
+    // Disable semi-transparent blue box for mobile webkit-based browsers (Chrome, Edge, Safari)
+    -webkit-tap-highlight-color: transparent;
 
     > i {
         height: 100%;

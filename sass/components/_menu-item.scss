@@ -6,6 +6,8 @@
     background-color: $background-color-base;
     border-radius: 15px;
     box-shadow: 0px 6px 10px $box-shadow-color;
+    // Disable semi-transparent blue box for mobile webkit-based browsers (Chrome, Edge, Safari)
+    -webkit-tap-highlight-color: transparent;
 
     &:hover > .menu-item__check {
         margin-right: 0;
