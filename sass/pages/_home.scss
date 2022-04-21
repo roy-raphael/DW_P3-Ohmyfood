@@ -30,7 +30,8 @@
 	z-index: 10;
 	
 	background-color: rgba($color: grey, $alpha: 0.5);
-	animation: hide 3s forwards;
+	// animation: hide 3s forwards;
+	animation: hide $loading-spinner__hide-timeout forwards;
 }
 
 #homepage-location {

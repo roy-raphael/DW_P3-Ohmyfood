@@ -471,8 +471,8 @@ template {
   width: 20%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  -webkit-animation: whole-turn--translated 5s linear infinite;
-          animation: whole-turn--translated 5s linear infinite;
+  -webkit-animation: whole-turn--translated 5s linear 0.8;
+          animation: whole-turn--translated 5s linear 0.8;
 }
 .loading-spinner:before {
   content: "";
@@ -490,76 +490,76 @@ template {
   height: 100%;
 }
 .loading-spinner__svg-1 {
-  -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(1 * 50ms) infinite;
-          animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(1 * 50ms) infinite;
+  -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(1 * 50ms) 1.3333333333;
+          animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(1 * 50ms) 1.3333333333;
 }
 .loading-spinner__svg-2 {
-  -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(2 * 50ms) infinite;
-          animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(2 * 50ms) infinite;
+  -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(2 * 50ms) 1.3333333333;
+          animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(2 * 50ms) 1.3333333333;
 }
 .loading-spinner__svg-3 {
-  -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(3 * 50ms) infinite;
-          animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(3 * 50ms) infinite;
+  -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(3 * 50ms) 1.3333333333;
+          animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(3 * 50ms) 1.3333333333;
 }
 .loading-spinner__svg-4 {
-  -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(4 * 50ms) infinite;
-          animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(4 * 50ms) infinite;
+  -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(4 * 50ms) 1.3333333333;
+          animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(4 * 50ms) 1.3333333333;
 }
 .loading-spinner__svg-5 {
-  -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(5 * 50ms) infinite;
-          animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(5 * 50ms) infinite;
+  -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(5 * 50ms) 1.3333333333;
+          animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(5 * 50ms) 1.3333333333;
 }
 .loading-spinner__svg-6 {
-  -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(6 * 50ms) infinite;
-          animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(6 * 50ms) infinite;
+  -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(6 * 50ms) 1.3333333333;
+          animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(6 * 50ms) 1.3333333333;
 }
 .loading-spinner__svg-7 {
-  -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(7 * 50ms) infinite;
-          animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(7 * 50ms) infinite;
+  -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(7 * 50ms) 1.3333333333;
+          animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(7 * 50ms) 1.3333333333;
 }
 .loading-spinner__svg-8 {
-  -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(8 * 50ms) infinite;
-          animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(8 * 50ms) infinite;
+  -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(8 * 50ms) 1.3333333333;
+          animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(8 * 50ms) 1.3333333333;
 }
 .loading-spinner__svg-9 {
-  -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(9 * 50ms) infinite;
-          animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(9 * 50ms) infinite;
+  -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(9 * 50ms) 1.3333333333;
+          animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(9 * 50ms) 1.3333333333;
 }
 .loading-spinner__svg-10 {
-  -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(10 * 50ms) infinite;
-          animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(10 * 50ms) infinite;
+  -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(10 * 50ms) 1.3333333333;
+          animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(10 * 50ms) 1.3333333333;
 }
 .loading-spinner__svg-11 {
-  -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(11 * 50ms) infinite;
-          animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(11 * 50ms) infinite;
+  -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(11 * 50ms) 1.3333333333;
+          animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(11 * 50ms) 1.3333333333;
 }
 .loading-spinner__svg-12 {
-  -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(12 * 50ms) infinite;
-          animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(12 * 50ms) infinite;
+  -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(12 * 50ms) 1.3333333333;
+          animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(12 * 50ms) 1.3333333333;
 }
 .loading-spinner__svg-13 {
-  -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(13 * 50ms) infinite;
-          animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(13 * 50ms) infinite;
+  -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(13 * 50ms) 1.3333333333;
+          animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(13 * 50ms) 1.3333333333;
 }
 .loading-spinner__svg-14 {
-  -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(14 * 50ms) infinite;
-          animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(14 * 50ms) infinite;
+  -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(14 * 50ms) 1.3333333333;
+          animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(14 * 50ms) 1.3333333333;
 }
 .loading-spinner__svg-15 {
-  -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(15 * 50ms) infinite;
-          animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(15 * 50ms) infinite;
+  -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(15 * 50ms) 1.3333333333;
+          animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(15 * 50ms) 1.3333333333;
 }
 .loading-spinner__svg-16 {
-  -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(16 * 50ms) infinite;
-          animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(16 * 50ms) infinite;
+  -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(16 * 50ms) 1.3333333333;
+          animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(16 * 50ms) 1.3333333333;
 }
 .loading-spinner__svg-17 {
-  -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(17 * 50ms) infinite;
-          animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(17 * 50ms) infinite;
+  -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(17 * 50ms) 1.3333333333;
+          animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(17 * 50ms) 1.3333333333;
 }
 .loading-spinner__svg-18 {
-  -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(18 * 50ms) infinite;
-          animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(18 * 50ms) infinite;
+  -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(18 * 50ms) 1.3333333333;
+          animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(18 * 50ms) 1.3333333333;
 }
 .loading-spinner__circle {
   fill: #9356DC;
@@ -921,8 +921,8 @@ footer {
   height: 100%;
   z-index: 10;
   background-color: rgba(128, 128, 128, 0.5);
-  -webkit-animation: hide 3s forwards;
-          animation: hide 3s forwards;
+  -webkit-animation: hide 4s forwards;
+          animation: hide 4s forwards;
 }
 
 #homepage-location {

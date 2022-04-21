@@ -6,7 +6,7 @@
 	width: 20%; // Wanted size of the loading spinner
 
 	transform: translate(-50%, -50%);
-	animation: whole-turn--translated 5s linear infinite;
+	animation: whole-turn--translated $loading-spinner__global-turn-duration linear $loading-spinner__global-turn-iterations;
 	
 	&:before {
 		content:     "";
@@ -27,7 +27,7 @@
 
 	@for $i from 1 through $loading-spinner__nb-elements {
 		&__svg-#{$i} {
-			animation: whole-turn 3s cubic-bezier(.62,-0.06,.35,1.07) calc(#{$i} * 50ms) infinite;
+			animation: whole-turn $loading-spinner__unitary-turn-duration cubic-bezier(.62,-0.06,.35,1.07) calc(#{$i} * 50ms) $loading-spinner__unitary-turn-iterations;
 		}
 	}
 
