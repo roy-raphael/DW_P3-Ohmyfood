@@ -3,7 +3,7 @@
     // Disable semi-transparent blue box for mobile webkit-based browsers (Chrome, Edge, Safari)
     -webkit-tap-highlight-color: transparent;
 
-    &__heart-empty--colored, &__heart-filled--colored {
+    &__heart--colored {
         background: linear-gradient($secondary, $primary);
         background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -12,17 +12,17 @@
         transition: clip-path 1s ease-out;
     }
     
-    &__heart-empty--black {
+    &__heart--black {
         clip-path: inset(0 0 0 0);
         transition: clip-path 1s ease-out;
     }
 
-    &:hover &__heart-empty--colored, &:hover &__heart-filled--colored {
+    &:hover &__heart--colored {
         clip-path: inset(0 0 0 0);
         transition: clip-path 1s ease-out;
     }
 
-    &:hover &__heart-empty--black {
+    &:hover &__heart--black {
         clip-path: inset(0 0 100% 0);
         transition: clip-path 1s ease-out;
     }

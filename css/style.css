@@ -431,7 +431,7 @@ template {
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
 }
-.filling-like-button__heart-empty--colored, .filling-like-button__heart-filled--colored {
+.filling-like-button__heart--colored {
   background: linear-gradient(#FF79DA, #9356DC);
   -webkit-background-clip: text;
           background-clip: text;
@@ -442,21 +442,21 @@ template {
   transition: clip-path 1s ease-out;
   transition: clip-path 1s ease-out, -webkit-clip-path 1s ease-out;
 }
-.filling-like-button__heart-empty--black {
+.filling-like-button__heart--black {
   -webkit-clip-path: inset(0 0 0 0);
           clip-path: inset(0 0 0 0);
   transition: -webkit-clip-path 1s ease-out;
   transition: clip-path 1s ease-out;
   transition: clip-path 1s ease-out, -webkit-clip-path 1s ease-out;
 }
-.filling-like-button:hover .filling-like-button__heart-empty--colored, .filling-like-button:hover .filling-like-button__heart-filled--colored {
+.filling-like-button:hover .filling-like-button__heart--colored {
   -webkit-clip-path: inset(0 0 0 0);
           clip-path: inset(0 0 0 0);
   transition: -webkit-clip-path 1s ease-out;
   transition: clip-path 1s ease-out;
   transition: clip-path 1s ease-out, -webkit-clip-path 1s ease-out;
 }
-.filling-like-button:hover .filling-like-button__heart-empty--black {
+.filling-like-button:hover .filling-like-button__heart--black {
   -webkit-clip-path: inset(0 0 100% 0);
           clip-path: inset(0 0 100% 0);
   transition: -webkit-clip-path 1s ease-out;
@@ -480,7 +480,7 @@ template {
   padding-top: 100%;
   /* padding to respect the ratio of 1:1 */
 }
-.loading-spinner__svg-1 {
+.loading-spinner__svg {
   position: absolute;
   top: 0;
   right: 0;
@@ -488,282 +488,80 @@ template {
   left: 0;
   width: 100%;
   height: 100%;
+}
+.loading-spinner__svg-1 {
   -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(1 * 50ms) infinite;
           animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(1 * 50ms) infinite;
 }
-.loading-spinner__circle-1 {
-  fill: #9356DC;
-  width: 10px;
-  height: 10px;
-}
 .loading-spinner__svg-2 {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
   -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(2 * 50ms) infinite;
           animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(2 * 50ms) infinite;
 }
-.loading-spinner__circle-2 {
-  fill: #9356DC;
-  width: 10px;
-  height: 10px;
-}
 .loading-spinner__svg-3 {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
   -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(3 * 50ms) infinite;
           animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(3 * 50ms) infinite;
 }
-.loading-spinner__circle-3 {
-  fill: #9356DC;
-  width: 10px;
-  height: 10px;
-}
 .loading-spinner__svg-4 {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
   -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(4 * 50ms) infinite;
           animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(4 * 50ms) infinite;
 }
-.loading-spinner__circle-4 {
-  fill: #9356DC;
-  width: 10px;
-  height: 10px;
-}
 .loading-spinner__svg-5 {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
   -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(5 * 50ms) infinite;
           animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(5 * 50ms) infinite;
 }
-.loading-spinner__circle-5 {
-  fill: #9356DC;
-  width: 10px;
-  height: 10px;
-}
 .loading-spinner__svg-6 {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
   -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(6 * 50ms) infinite;
           animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(6 * 50ms) infinite;
 }
-.loading-spinner__circle-6 {
-  fill: #9356DC;
-  width: 10px;
-  height: 10px;
-}
 .loading-spinner__svg-7 {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
   -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(7 * 50ms) infinite;
           animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(7 * 50ms) infinite;
 }
-.loading-spinner__circle-7 {
-  fill: #9356DC;
-  width: 10px;
-  height: 10px;
-}
 .loading-spinner__svg-8 {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
   -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(8 * 50ms) infinite;
           animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(8 * 50ms) infinite;
 }
-.loading-spinner__circle-8 {
-  fill: #9356DC;
-  width: 10px;
-  height: 10px;
-}
 .loading-spinner__svg-9 {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
   -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(9 * 50ms) infinite;
           animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(9 * 50ms) infinite;
 }
-.loading-spinner__circle-9 {
-  fill: #9356DC;
-  width: 10px;
-  height: 10px;
-}
 .loading-spinner__svg-10 {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
   -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(10 * 50ms) infinite;
           animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(10 * 50ms) infinite;
 }
-.loading-spinner__circle-10 {
-  fill: #9356DC;
-  width: 10px;
-  height: 10px;
-}
 .loading-spinner__svg-11 {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
   -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(11 * 50ms) infinite;
           animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(11 * 50ms) infinite;
 }
-.loading-spinner__circle-11 {
-  fill: #9356DC;
-  width: 10px;
-  height: 10px;
-}
 .loading-spinner__svg-12 {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
   -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(12 * 50ms) infinite;
           animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(12 * 50ms) infinite;
 }
-.loading-spinner__circle-12 {
-  fill: #9356DC;
-  width: 10px;
-  height: 10px;
-}
 .loading-spinner__svg-13 {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
   -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(13 * 50ms) infinite;
           animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(13 * 50ms) infinite;
 }
-.loading-spinner__circle-13 {
-  fill: #9356DC;
-  width: 10px;
-  height: 10px;
-}
 .loading-spinner__svg-14 {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
   -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(14 * 50ms) infinite;
           animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(14 * 50ms) infinite;
 }
-.loading-spinner__circle-14 {
-  fill: #9356DC;
-  width: 10px;
-  height: 10px;
-}
 .loading-spinner__svg-15 {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
   -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(15 * 50ms) infinite;
           animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(15 * 50ms) infinite;
 }
-.loading-spinner__circle-15 {
-  fill: #9356DC;
-  width: 10px;
-  height: 10px;
-}
 .loading-spinner__svg-16 {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
   -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(16 * 50ms) infinite;
           animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(16 * 50ms) infinite;
 }
-.loading-spinner__circle-16 {
-  fill: #9356DC;
-  width: 10px;
-  height: 10px;
-}
 .loading-spinner__svg-17 {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
   -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(17 * 50ms) infinite;
           animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(17 * 50ms) infinite;
 }
-.loading-spinner__circle-17 {
-  fill: #9356DC;
-  width: 10px;
-  height: 10px;
-}
 .loading-spinner__svg-18 {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
   -webkit-animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(18 * 50ms) infinite;
           animation: whole-turn 3s cubic-bezier(0.62, -0.06, 0.35, 1.07) calc(18 * 50ms) infinite;
 }
-.loading-spinner__circle-18 {
+.loading-spinner__circle {
   fill: #9356DC;
   width: 10px;
   height: 10px;
