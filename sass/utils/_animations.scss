@@ -18,11 +18,16 @@
 
 @keyframes fading-up {
     from {
-        transform: translateY(20px);
+		@if #{$desktop-up} {
+        	transform: translate(20px, 0);
+		}
+		@else {
+			transform: translate(0, 20px);
+		}
         opacity: 0;
     }
     to {
-        transform: translateY(0);
+        transform: translate(0, 0);
         opacity: 1;
     }
 }
