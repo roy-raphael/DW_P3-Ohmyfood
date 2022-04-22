@@ -877,6 +877,9 @@ footer {
     flex-direction: row;
   }
 }
+#homepage-functioning > ol > .ordered-list-item {
+  max-width: 400px;
+}
 #homepage-functioning > ol > .ordered-list-item:not(:hover) {
   background-color: #f6f6f6;
 }

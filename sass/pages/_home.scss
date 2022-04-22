@@ -104,8 +104,12 @@
             flex-direction: row;
         }
 
-        & > .ordered-list-item:not(:hover) {
-            background-color: alternative-background-color($background-color-base);
+        & > .ordered-list-item {
+            max-width: 400px;
+
+            &:not(:hover) {
+                background-color: alternative-background-color($background-color-base);
+            }
         }
     }
 }
