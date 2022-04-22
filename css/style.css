@@ -779,24 +779,6 @@ footer {
   gap: 15px;
 }
 
-.homepage-section {
-  padding: 45px 20px 60px 20px;
-}
-
-.user-location {
-  position: relative;
-  font-size: 16px;
-}
-.user-location > i {
-  position: absolute;
-  left: -30px;
-}
-
-.homepage-section__title {
-  margin: 0;
-  font-size: 24px;
-}
-
 .waiting-screen {
   position: fixed;
   top: 0;
@@ -818,6 +800,24 @@ footer {
 .waiting-screen__container {
   width: 20%;
   max-width: 288px;
+}
+
+.homepage-section {
+  padding: 45px 20px 60px 20px;
+}
+
+.user-location {
+  position: relative;
+  font-size: 16px;
+}
+.user-location > i {
+  position: absolute;
+  left: -30px;
+}
+
+.homepage-section__title {
+  margin: 0;
+  font-size: 24px;
 }
 
 #homepage-location {
