@@ -29,8 +29,8 @@ $footer-background-color: #353535;
 
 // Loading spinner
 $loading-spinner__screen-percentage: 0.2;
-$loading-spinner__hide-timeout: 4s;
-$loading-spinner__global-turn-duration: 5s;
+$loading-spinner__hide-timeout: 3s;
+$loading-spinner__global-turn-duration: 4s;
 $loading-spinner__global-turn-iterations: calc($loading-spinner__hide-timeout / $loading-spinner__global-turn-duration);
-$loading-spinner__unitary-turn-duration: 3s;
+$loading-spinner__unitary-turn-duration: 2.5s;
 $loading-spinner__unitary-turn-iterations: calc($loading-spinner__hide-timeout / $loading-spinner__unitary-turn-duration);
