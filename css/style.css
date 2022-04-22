@@ -734,7 +734,7 @@ footer {
           column-gap: 20px;
   grid-auto-columns: minmax(0, 1fr);
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 992px) {
   .menu__categories {
     grid-auto-flow: column;
   }
@@ -872,7 +872,7 @@ footer {
   justify-content: space-between;
   gap: 25px;
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 992px) {
   #homepage-functioning > ol {
     flex-direction: row;
   }

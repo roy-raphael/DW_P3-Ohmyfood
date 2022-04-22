@@ -6,7 +6,7 @@ $background-color-base: #FFFFFF;
 $box-shadow-color: lightgrey;
 
 // Breakpoints (for media queries)
-$tablet-desktop-breakpoint: 900px;
+$tablet-desktop-breakpoint: 992px;
 $page-max-width: 1440px;
 $desktop-up: "screen and (min-width: #{$tablet-desktop-breakpoint})";
 $big-desktop-up: "screen and (min-width: #{$page-max-width})";
